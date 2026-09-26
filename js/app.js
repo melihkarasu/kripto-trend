@@ -2,7 +2,7 @@ let marketData = [];
 
         async function loadKripto() {
           try {
-            const res = await fetch('/api/kripto/trend');
+            const res = await fetch('https://app.melihkarasu.com/api/kripto/trend');
             const data = await res.json();
             if (!data.success) throw new Error(data.error);
 
